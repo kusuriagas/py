@@ -43,4 +43,27 @@ out:
      9   Attendance      20 non-null     object
     dtypes: int64(4), object(6)
     memory usage: 1.7+ KB
+ #Muestra la descripcion de variables numericas
+df_mundiales.describe()
+out:
+    Year	GoalsScored	QualifiedTeams	MatchesPlayed
+    count	20.000000	20.000000	20.000000	20.000000
+    mean	1974.800000	118.950000	21.250000	41.800000
+    std	25.582889	32.972836	7.268352	17.218717
+    min	1930.000000	70.000000	13.000000	17.000000
+    25%	1957.000000	89.000000	16.000000	30.500000
+    50%	1976.000000	120.500000	16.000000	38.000000
+    75%	1995.000000	145.250000	26.000000	55.000000
+    max	2014.000000	171.000000	32.000000	64.000000
   
+EXPLORACION II
+
+#Paises que fueron campeones de locales
+
+df_mundiales[df_mundiales["Country"]==df_mundiales["Winner"]]
+
+#mundiales en que se anotaron mas goles
+
+df_mundiales.sort_values(by="GoalsScored",ascending=False)
+
+
