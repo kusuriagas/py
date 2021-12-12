@@ -66,4 +66,49 @@ df_mundiales[df_mundiales["Country"]==df_mundiales["Winner"]]
 
 df_mundiales.sort_values(by="GoalsScored",ascending=False)
 
+#series
+
+winner=df_mundiales["Winner"]
+winner
+Out:
+    0        Uruguay
+    1          Italy
+    2          Italy
+    3        Uruguay
+    4     Germany FR
+    5         Brazil
+    6         Brazil
+    7        England
+    8         Brazil
+    9     Germany FR
+    10     Argentina
+    11         Italy
+    12     Argentina
+    13    Germany FR
+    14        Brazil
+    15        France
+    16        Brazil
+    17         Italy
+    18         Spain
+    19       Germany
+    Name: Winner, dtype: object
+ type(winner)
+pandas.core.series.Series
+
+
+winner.value_counts()
+
+Brazil        5
+Italy         4
+Germany FR    3
+Argentina     2
+Uruguay       2
+England       1
+France        1
+Spain         1
+Germany       1
+Name: Winner, dtype: int64
+
+        
+        
 
