@@ -24,3 +24,61 @@ str_date=dt.datetime.strptime(str_date,"%d-%m-%Y")
 str_date="30/01/2022"
 str_date=dt.datetime.strptime(str_date,"%d/%m/%Y")
 print(str_date)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ejercicios numeros primos
+
+for i  in  range(2,51):
+	estado=True
+	for j in range(2,i):
+		if i%j==0:
+			estado=False
+			break
+	if estado:print('primo',i)
+    
+*********************************************    
+    
+ class Alumno:
+
+
+	def __init__(self,CodAlumno,Nombre):
+		self.CodAlumno=CodAlumno
+		self.Nombre=Nombre
+		self.ListaCurso=[]
+
+	def AgregarCurso(self,curso):
+		self.ListaCurso.append(curso)
+
+
+
+class Alumno:
+
+
+	def __init__(self,CodAlumno,Nombre):
+		self.CodAlumno=CodAlumno
+		self.Nombre=Nombre
+		self.ListaCurso=[]
+
+	def AgregarCurso(self,curso):
+		self.ListaCurso.append(curso)
+
+
+
+objalumno=Alumno('c001','kenyo')
+objalumno.AgregarCurso('php')
+objalumno.AgregarCurso('java')
+print(objalumno.CodAlumno)
+print(objalumno.ListaCurso)
+
